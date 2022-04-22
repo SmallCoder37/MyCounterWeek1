@@ -45,3 +45,19 @@ c count: 2.
 c increment ; increment.
 self assert: c count equals: 4
 ]
+
+{ #category : #tests }
+TestCounter >> testInitialize [
+
+| c |
+c := Counter new.
+self assert: c count equals: 0
+]
+
+{ #category : #tests }
+TestCounter >> testStartingAtFive [
+
+| c |
+c := Counter startingAt: 5.
+self assert: c count equals: 5
+]
