@@ -29,6 +29,12 @@ count := count - 1
 ]
 
 { #category : #accessing }
+Counter >> decrement2 [
+
+count := count - 2
+]
+
+{ #category : #accessing }
 Counter >> increment [
 
 count := count + 1

@@ -27,6 +27,16 @@ self assert: c count equals: 0
 ]
 
 { #category : #tests }
+TestCounter >> testDecrement2 [
+
+| c |
+c := Counter new.
+c count: 4.
+c decrement2 ; decrement2.
+self assert: c count equals: 0
+]
+
+{ #category : #tests }
 TestCounter >> testIncrement [
 
 | c |
